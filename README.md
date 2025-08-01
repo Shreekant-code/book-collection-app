@@ -26,12 +26,5 @@ This beginner-friendly project uses **React** for the frontend and **Node.js/Exp
 | Database   | MongoDB                       |
 | UI Alerts  | notistack (Material Snackbar) |
 
----
 
-## 📦 Installation & Setup
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/book-crud-app.git
-cd book-crud-app
 
