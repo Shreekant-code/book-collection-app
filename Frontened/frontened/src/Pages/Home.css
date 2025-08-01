@@ -1,0 +1,127 @@
+/* Header section */
+.book-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 12px;
+}
+
+.book-list-header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+.icon-create {
+  font-size: 38px;
+  color: #e63946;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-create:hover {
+  transform: scale(1.1);
+  color: #c0262d;
+}
+
+/* Card container layout */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 20px 40px;
+}
+
+/* Individual card */
+.book-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+}
+
+.book-card h2 {
+  font-size: 20px;
+  color: #222;
+  margin: 0 0 10px 0;
+}
+
+.book-card p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+/* Actions (icons) */
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.icon {
+  font-size: 22px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  color: #1d3557;
+  transform: scale(1.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .book-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .book-list-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .icon-create {
+    font-size: 34px;
+  }
+
+  .book-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    font-size: 20px;
+  }
+
+  .icon-create {
+    font-size: 30px;
+  }
+
+  .book-card {
+    padding: 16px;
+  }
+
+  .book-card h2 {
+    font-size: 18px;
+  }
+
+  .book-card p {
+    font-size: 14px;
+  }
+}
